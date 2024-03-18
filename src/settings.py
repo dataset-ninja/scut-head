@@ -49,7 +49,7 @@ DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
 }
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]] | Literal["predefined"]] = {"person": [255, 0, 0]}
+CLASS2COLOR: Optional[Dict[str, List[str]] or Literal["predefined"]] = {"person": [255, 0, 0]}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
@@ -81,7 +81,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.scut.edu.cn/en/
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__POSTTEXT__": "Additionally, every image marked with ***part a*** or ***part a*** tag"
+    "__POSTTEXT__": "Additionally, every image marked with ***part a*** or ***part b*** tag"
 }
 TAGS: Optional[
     List[
