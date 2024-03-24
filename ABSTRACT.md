@@ -22,4 +22,3 @@ On the other hand, ***part b*** consists of 2405 images sourced from the interne
 
 Both ***part a*** and ***part b*** are further divided into training and testing subsets. Specifically, ***part a*** includes 1500 images for training and 500 for testing, while ***part b*** comprises 1905 training images and 500 testing images. 
 
-Global detector and local detector are trained using stochastic gradient descent (SGD). Momentum and weight decay are set to be 0.9 and 0.0005 respectively. Widths of images are resized to 1024 while keeping their aspect ratios. Learning rate is set to 0.001 during 0 ∼ 10k iterations, 0.0001 during 10k ∼ 20k iterations and 0.00001 during 20k ∼ 30k iterations. As for anchors setting strategy, the authors generate anchors using Kmeans with modified distance metrics.
